@@ -1,0 +1,12 @@
+<!-- uuid, bridge_name, mac, ip_segment不能和其他虚拟网桥配置冲突 -->
+<network>
+  <name>isolated</name>
+  <uuid>b3c75ca5-50cf-4976-841f-d5888a317666</uuid>
+  <bridge name='virbr1' stp='on' delay='0'/>
+  <mac address='52:54:00:39:b8:66'/>
+  <ip address='192.168.156.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.156.2' end='192.168.156.254'/>
+    </dhcp>
+  </ip>
+</network>
