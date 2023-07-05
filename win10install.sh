@@ -1,3 +1,5 @@
+sudo apt install qemu-kvm libvirt-daemon bridge-utils virtinst
+
 virt-install \
   --accelerate --virt-type=kvm --os-variant=win10 \
   --ram=2048 --vcpus sockets=1,cores=1,threads=1 \
