@@ -5,7 +5,6 @@ sudo apt-get install -y qemu-kvm \ # 提供虚拟机硬件、外设模拟功能
 	virtinst \ # 客户机安装的命令行工具 virt-install
 	virt-manager # 客户机的图形化管理工具（非必须）
 
-# 宿主机操作系统：Ubuntu18.04
 virt-install \
 	--accelerate \ # 加速选项（默认）
 	--virt-type=kvm \ # 指定所使用的虚拟化管理工具为KVM
